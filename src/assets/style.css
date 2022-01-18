@@ -1,0 +1,169 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+.title{
+    color: #d8d8d8;
+    font-size: 70px;
+    font-weight:lighter;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .InputRow{
+    width: 100%;
+    height:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+  .Inputform{
+    width: 50%;
+    height: inherit;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px 2px  lightgray;
+   
+}
+
+.AddButton{
+width: 30%;
+background-color: lightgrey;
+margin-top: 20px;
+border: 1px solid darkgray;
+color: black;
+margin-inline: 10px;
+}
+
+
+  .TasksRow{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .TaskCol{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      box-shadow: -5px 5px 5px 2px  lightgray;
+      width:30%;
+      margin-top: 3%;
+      height: 200px;
+      cursor: pointer;
+      
+  }
+  .TaskCol:hover{
+    border: 1px solid gray;
+    box-shadow: -5px 5px 5px 2px  #808088;
+  }
+
+  .TaskTitle{
+    background-color: lightgrey;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .IconButtons{
+    width: fit-content;
+    height: fit-content;
+  }
+
+
+  /* loginpage */
+  button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: grey;
+    cursor: pointer;
+  }
+  
+  .login {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+    background: #e9e9e9;
+    display: flex;
+  }
+  
+  .login .loginContainer {
+    padding: 60px;
+    margin: auto;
+    width: 100%;
+    max-width: 520px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    box-shadow: 0 50px 70px -20px black ;
+  }
+  
+  .login .loginContainer label {
+    color: white;
+    margin: 14px 0;
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+  }
+  
+  .login .loginContainer input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .login .loginContainer .btnContainer {
+    width: 100%;
+    padding: 24px 0;
+  }
+  
+  .login .loginContainer .btnContainer p {
+    margin: 14px 0 0 0;
+    text-align: right;
+    color: #fff;
+  }
+  
+  .login .loginContainer .btnContainer p span {
+    color: yellow;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+  }
+  
+  .login .loginContainer .btnContainer p span:hover {
+    color: red;
+  }
+  
+  .login .loginContainer .errorMsg {
+    color: red;
+    font-size: 16px;
+  }
