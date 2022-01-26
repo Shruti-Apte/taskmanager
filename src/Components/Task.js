@@ -29,9 +29,9 @@ const Task = ({ item, DeleteTask, onUpdate,CompletedTask}) => {
                {item.status==='Active'? <p><span style={{color:'red'}}> {TimeLeft}</span> left.</p>: <span style={{color:'green',fontWeight:'bold'}}>Task Completed</span>}
             </div>
             <div className='IconButtons'>
-                <AiTwotoneEdit size={30} color='grey' style={{margin:'5px'}} onClick={() => onUpdate(item.id)} />
-                <AiFillDelete size={30} color='grey' style={{margin:'5px'}} onClick={() => DeleteTask(item.id)} />
-                {item.status==='Active'?<MdDone size={30} color='grey' style={{margin:'5px'}} onClick={()=>CompletedTask(item.id)}/>:null}
+                <AiTwotoneEdit size={30} color='grey' style={{margin:'5px',cursor:'pointer'}} onClick={() => onUpdate(item.id)} />
+                <AiFillDelete size={30} color='grey' style={{margin:'5px',cursor:'pointer'}} onClick={() => DeleteTask(item.id)} />
+                {item.status==='Active'?<MdDone size={30} color='grey' style={{margin:'5px',cursor:'pointer'}} onClick={()=>CompletedTask(item.id)}/>:null}
             </div>
         </Col>
     )

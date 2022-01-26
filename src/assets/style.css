@@ -44,6 +44,17 @@ color: black;
 margin-inline: 10px;
 }
 
+.AddButton:hover{
+  background-color: grey;
+  border: darkgray;
+}
+.AddButton:focus{
+background-color: black;
+color: white;
+border:darkgrey;
+box-shadow: none;
+}
+
 
   .TasksRow{
       width: 100%;
