@@ -64,10 +64,19 @@ const TaskManager = ({ handleLogout, User }) => {
     }
 
     const UpdateTask = async () => {
-
-        const Update = doc(db, 'Tasks', EditId);
-        const updatedtask = { label: label, status: 'Active', comment: comment, attachedfile: attachedfile, date: date, time: time, deadline: deadline }
-        await updateDoc(Update, updatedtask);
+        console.log("lol", EditId);
+        // const docRef = doc(db, 'Tasks', EditId);
+        // const docSnap = await getDoc(docRef);
+        // if (!docSnap.exists()) {
+        //     console.error("Document does not exist!");
+        //     return;
+        // }
+        
+        // await updateDoc(docRef, updatedtask);
+        
+        // const Update = doc(db, 'Tasks', EditId);
+        // const updatedtask = { label: label, status: 'Active', comment: comment, attachedfile: attachedfile, date: date, time: time, deadline: deadline }
+        // await updateDoc(Update, updatedtask);
     }
 
     const CompletedTask = async (id) => {
